@@ -23,6 +23,7 @@ div {
 div h1 {
     display: inline;
     font-weight: bold;
+    font-size: 40px;
     text-shadow: 2px 2px 5px gray;
 }
 

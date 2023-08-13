@@ -15,6 +15,7 @@ export class UpdateEmpComponent {
   update(form: any) {
     const user: UserData = {
       userName: form.controls['name'].value,
+      userMail: form.controls['email'].value,
       userAge: form.controls['age'].value,
       userPhone: form.controls['phone'].value
     }
