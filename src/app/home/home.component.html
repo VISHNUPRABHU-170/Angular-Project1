@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="btn">
+        <button (click)="show()" class="show">Show Employee Details</button>
+        <button *ngIf="condition" (click)="hide()" class="hide">Hide</button>
+    </div>
+    <div *ngIf="condition">
+        <div *ngFor="let items of Data">
+            <div class="container">
+                <hr>
+                <div>EmployeeName: {{items.userName}}</div>
+                <div>EmployeeAge: {{items.userAge}}</div>
+                <div>EmployeePhone: {{items.userPhone}}</div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

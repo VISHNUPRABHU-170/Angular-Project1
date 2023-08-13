@@ -1,0 +1,13 @@
+<div>
+    <h1>Employee Details</h1>
+    <form #myForm="ngForm" (ngSubmit)="add(myForm)">
+        <input type="text" name="name" placeholder="Enter EmployeeName" ngModel/>
+        <input type="number" name="age" placeholder="Enter EmployeeAge" ngModel/>
+        <input type="number" name="phone" placeholder="Enter MobileNumber" ngModel />
+        <select name="gender" (change)="update()">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <button type="submit">ADD</button>
+    </form>
+</div>

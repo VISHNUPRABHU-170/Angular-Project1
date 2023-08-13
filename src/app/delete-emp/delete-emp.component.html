@@ -1,0 +1,7 @@
+<div>
+    <h1>Delete Employee Details</h1>
+    <form #myForm="ngForm" (ngSubmit)="delete(myForm)">
+        <input type="text" name="name" placeholder="Enter EmployeeName" ngModel/>
+        <button type="submit">Delete</button>
+    </form>
+</div>

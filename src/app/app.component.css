@@ -1,0 +1,56 @@
+body {
+    display: inline;
+    margin: 0px;
+}
+
+header {
+    margin: 0px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: 0px -5px 5px -2px gray,
+    0px 5px 5px -2px gray,
+    -5px 0px 5px -2px gray,
+    5px 0px 5px -2px gray;
+}
+
+div {
+    margin-left: 50px;
+}
+
+div h1 {
+    display: inline;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px gray;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 1px 1px 10px gray;
+}
+
+nav {
+    margin-right: 10px;
+}
+
+ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: white;
+}
