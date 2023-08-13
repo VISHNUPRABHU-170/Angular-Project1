@@ -3,4 +3,5 @@ export interface UserData {
     userMail:string,
     userAge:number,
     userPhone:number;
+    userGender:string;
 }

@@ -8,6 +8,7 @@ import { EmpInfoService } from '../emp-info.service';
   styleUrls: ['./update-emp.component.css']
 })
 export class UpdateEmpComponent {
+  gender: string = "Male";
   constructor(private service: EmpInfoService) {
 
   }
@@ -17,7 +18,8 @@ export class UpdateEmpComponent {
       userName: form.controls['name'].value,
       userMail: form.controls['email'].value,
       userAge: form.controls['age'].value,
-      userPhone: form.controls['phone'].value
+      userPhone: form.controls['phone'].value,
+      userGender: this.gender,
     }
     this.service.updateUser(user);
   }

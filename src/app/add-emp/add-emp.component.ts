@@ -8,7 +8,7 @@ import { UserData } from '../user-data';
   styleUrls: ['./add-emp.component.css'],
 })
 export class AddEmpComponent {
-
+  gender: string = "Male";
   constructor(private service: EmpInfoService) {
   }
   add(form: any) {
@@ -17,11 +17,9 @@ export class AddEmpComponent {
       userMail: form.controls['email'].value,
       userAge : form.controls['age'].value,
       userPhone: form.controls['phone'].value,
+      userGender: this.gender,
     };
     this.service.addData(user);
   }
 
-  update() {
-
-  }
 }

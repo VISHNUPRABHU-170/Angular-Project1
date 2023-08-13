@@ -5,6 +5,10 @@
         <input type="email" name="email" placeholder="Enter EmailId" ngModel />
         <input type="number" name="age" placeholder="Enter EmployeeAge" ngModel/>
         <input type="number" name="phone" placeholder="Enter MobileNumber" ngModel/>
+        <select [(ngModel)]="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
         <button type="submit">UPDATE</button>
     </form>
 </div>
